@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+.container-pd{
+    width: 100%;
+    margin: 0 auto; 
+}
+h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: darkblue;
+    margin: 3% ;
+}
+hr{
+    margin: 3% 0 3% 3%;
+}
+p{
+    font-size: 13px;
+    margin-top: 3px;
+}
+a{
+    text-decoration: none;
+    color:deepskyblue;
+    font-size: 13px;
+}
+.form-container{
+    margin-bottom: 50px;
+    margin-left: 3%;
+    width: 80%;
+    padding: 3%;
+    background-color: white;
+}
+.line-box{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    
+}
+
+.main-label{
+    line-height: 22px;
+    width: 20%;
+}
+.input-box-style{
+    flex: 1;
+}
+.input-style {
+    width: 100%;
+    padding: 12px 10px;
+    border: 2px solid rgb(196, 194, 194);
+}
+fieldset {
+    flex: 1;
+}
+fieldset input{
+    width: 100%;
+}
+.city-zipcode{
+    display: flex;
+    flex: 1;
+}
+.city-fieldset{
+    flex-grow: 2;
+}
+.zipcode-fieldset{
+    flex-grow: 1;
+}
+.country-fieldset{
+    flex: 1;
+}
+.country{
+   width: 45%;
+   background-color: ghostwhite;
+}
+.country input {
+    background-color: ghostwhite;
+}
+.country legend {
+    background-color: white;
+}
+fieldset input {
+    border: none;
+}
+
+.statereg-taxnum{
+    display: flex;
+    flex: 1;
+}
+
+.statereg-taxnum select {
+    border: none;
+    width: 100%;
+}
+
+
+.statereg-taxnum .stateregistered{
+    flex-grow: 1;
+    white-space: nowrap;
+}
+.statereg-taxnum .taxnumber{
+    flex-grow: 2;
+    margin-left: 10px;
+}
+.profession{
+    display: flex;
+    align-items: center;
+}
+.right-side-txt{
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.button-line{
+    display: flex;
+}
+.button-group{
+    display: flex;
+}
+.white-btn{
+    border: 2px solid deepskyblue ;
+    background-color: white;
+    color: deepskyblue;
+    padding: 15px 10px;
+    margin: 0;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.blue-btn{
+    border: 2px solid deepskyblue ;
+    padding: 15px 10px;
+    margin: 0;
+    color: white;
+    background-color: deepskyblue;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+.self-employed-since{
+    justify-content: flex-start;
+    
+}
+.self-employed-since span{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin:0 15px;
+}
+.registration-date{
+
+    width: 250px;
+    flex: none;
+}
+.registration-date input {
+    font-size: 18px;
+    margin-top: 2px;
+}
+.save-btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    position: relative;
+    left: 80%;
+    
+}

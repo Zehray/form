@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Details</title>
+</head>
+<body>
+    <div class="container-pd">
+        <header>
+            <h1>Personal Details</h1>
+        </header>
+        <hr>
+        <div class="form-container">
+            <form method="post" action="#">
+                <div class="line-box">
+                    <label class="main-label" for="name">Full<br/> Name</label>
+                    <div class="input-box-style">
+                        <input class="input-style" name="name" type="text"
+                    id="name"
+                    placeholder="e.g. Max Mustermann">
+                    </div>
+                </div>
+                <div class="line-box">
+                    <label class="main-label" for="bs-name">Business<br/> Name</label>
+                    <div class="input-box-style">
+                        <input class="input-style" name="business-name" type="text"
+                    id="bs-name"
+                    placeholder="e.g. Mustermann Business">
+                    <p>Optional. Add if you are using a different name for your freelance business.</p>
+                    </div>
+                </div>
+                <div class="line-box">
+                    <label class="main-label" for="address">Address</label>
+                    <fieldset ><legend>Street & Number</legend>
+                    <input  type="text" name="street-number" id="address" placeholder="e.g. Rosa Luxemburg 28"></fieldset>
+                </div>
+                <div class="line-box">
+                    <label class="main-label"for="address"></label>
+                    <div class="city-zipcode">
+                        <fieldset class="city-fieldset"><legend>City</legend>
+                        <input type="text" name="city"
+                        id="city" placeholder="e.g. Berlin"></fieldset>
+                        <fieldset class="zipcode-fieldset"><legend>Zip Code</legend>
+                            <input type="text" name="zipcode" id="zipcode" placeholder="e.g. Berlin"></fieldset>
+                    </div>
+                </div>
+                <div class="line-box">
+                    <label class="main-label"for="address"></label>
+                    <div class="country-fieldset">
+                        <fieldset class="country"><legend>Country</legend>
+                        <input type="text" name="country"
+                        id="country" placeholder="Germany"></fieldset>
+                    </div>
+                </div>
+                <div class="line-box">
+                    <label class="main-label"for="tax-registration">Tax<br/>registration</label>
+                    <div class="statereg-taxnum">
+                        <div class="stateregistered"><fieldset ><legend>State registered in</legend>
+                            <select name="stateregistered" id="tax-registration">
+                                <option value="Berlin">Berlin</option>
+                                <option value="Others">Others</option>
+                            </select></fieldset>
+                        <span></span></div>
+                        <div class="taxnumber">
+                            <fieldset ><legend>Tax number</legend>
+                                <input type="text" name="country"
+                                id="taxnumber" placeholder="e.g. 12/345/67890"></fieldset>
+                                <p>Your self employed <a href="#">tax number (Steuernummer).</a> Learn more on <a href="#">how to find it.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-box">
+                    <label class="main-label" for="vat-reporting">VAT<br/> Reporting</label>
+                    <div class="input-box-style">
+                        <input class="input-style" name="vat-reporting" type="text"
+                    id="vat-reporting"
+                    placeholder="Quaerterly VAT declarations">
+                    </div>
+                </div>
+                <div class="line-box">
+                    <label class="main-label" for="vat-number">VAT<br/> Number</label>
+                    <div class="input-box-style">
+                        <input class="input-style" name="vat-number" type="text"
+                    id="vat-number"
+                    placeholder="e.g. DE123456789">
+                    <p>Optional. <a href="#">VAT number</a> is needed only if you invoice customers outside of Germany. Learn more on <a href="#">how to find it.</a></p>
+                    </div>
+                </div>
+                <div class="line-box">
+                    <label class="main-label profession" for="profession" >Profession</label>
+                    <div class="input-box-style">
+                        <p class="right-side-txt">0/25</p>
+                        <input class="input-style" name="profession" type="text"
+                    id="profession"
+                    placeholder="e.g. Softwareentwickler">
+                    <p>Profession should be in German.<a href="#">Help me find my profession title</a></p>
+                    </div>
+                </div>
+                <div class="line-box">
+                    <label class="main-label profession" for="legal-type" >Legal <br/> Type</label>
+                    <div class="input-box-style">
+                        
+                        <select class="input-style" name="legal-type" type="text"
+                    id="legal-type"
+                    >
+                <option value="Freelancer/Freiberufler">Freelancer/Freiberufler</option>
+            <option value="Others">Others</option></select>
+                    <a href="#">Help me find my legal type</a>
+                    </div>
+                </div>
+                <div class="line-box self-employed-since">
+                    <label class="main-label" for="self-employed-since" >Self-<br/>employed<br/>since</label>
+                    <div class="button-line"><div class="button-group">
+                        <button class="white-btn">Before 2019</button>
+                        <button class="blue-btn">2019 or later</button>
+                    </div>
+                    <span>on</span>
+                    <fieldset class="registration-date"><legend>Registration date</legend>
+                        <input type="text" name="registration-date" id="registration-date" placeholder="01.01.2021"></fieldset></div>
+                        
+                </div>
+                <div class="line-box self-employed-since">
+                    <label class="main-label" for="accept"></label>
+                    <div><input type="checkbox" id="promise" name="promise">
+                        <label  for="promise">I am no longer self-employed and de-registered with the Finanzamt</label></div>
+                </div>
+            </form>
+            <hr>
+            <button class="blue-btn save-btn" type="button">Save</button>
+        </div>
+    </div>
+</body>
+</html>
